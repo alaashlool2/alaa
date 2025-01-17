@@ -6,20 +6,9 @@
     <title>علاء الشلول</title>
     <link rel="stylesheet" href="styles.css"> <!-- ربط ملف CSS -->
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">الخدمات</a></li>
-                <li><a href="#">التواصل</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <section id="hero">
-        <h1>هاي يا خوان اني علاء</h1>
+        <h1>هاي انا علاء</h1>
         <p>نحن نقدم أفضل الخدمات.</p>
         <a href="https://www.instagram.com/3laa_shlool" target="_blank">
             <button>تواصل معنا</button>
@@ -35,7 +24,7 @@
 </html>
 
 
-<!DOCTYPE html>
+<!DOCTYPE html>0 
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
@@ -68,7 +57,7 @@
         button {
             padding: 10px 20px;
             border: none;
-            background-color: #007BFF;
+            background-color: #000000;
             color: white;
             border-radius: 5px;
             cursor: pointer;
@@ -80,18 +69,11 @@
         }
 
         .results {
-            margin-top: 20px;
+            margin-top: 50px;
             text-align: left;
         }
     </style>
 </head>
-<body>
-    <h1> البحث</h1>
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="أدخل كلمة للبحث">
-        <button onclick="performSearch()">بحث</button>
-    </div>
-    <div class="results" id="results"></div>
 
     <script>
         const data = [
@@ -104,28 +86,121 @@
             "أساسيات قواعد البيانات",
         ];
 
-        function performSearch() {
-            const query = document.getElementById('search-input').value.toLowerCase();
-            const resultsContainer = document.getElementById('results');
-            resultsContainer.innerHTML = ""; // مسح النتائج السابقة
-
-            if (query.trim() === "") {
-                resultsContainer.innerHTML = "<p>الرجاء إدخال كلمة للبحث.</p>";
-                return;
-            }
-
-            const results = data.filter(item => item.toLowerCase().includes(query));
-
-            if (results.length > 0) {
-                resultsContainer.innerHTML = "<h3>نتائج البحث:</h3>";
-                results.forEach(result => {
-                    resultsContainer.innerHTML += `<p>${result}</p>`;
-                });
-            } else {
-                resultsContainer.innerHTML = "<p>لا توجد نتائج مطابقة.</p>";
-            }
-        }
     </script>
 </body>
 </html>
+
+
+
+<!DOCTYPE html>
+<html lang="ar">
+    </style>
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>إضافة صور إلى الموقع</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                line-height: 1.6;
+                margin: 20px;
+            }
+    
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin: 20px 0;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+    
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap:20px;
+            }
+    
+            .gallery img {
+                width: 300px; /* يمكن تعديل الحجم */
+                height: auto;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>مرحبا بكم في موقعي</p>
+
+        <p>ميسي عمكوا</p>
+    
+        <!-- صورة فردية -->
+    
+        <!-- معرض الصور -->
+        <div class="gallery">
+            <img src="https://1.bp.blogspot.com/-13EegyrMFCs/Y593fiN_-VI/AAAAAAAAGMY/18bNCuk4cLIWtXDLCyx4K-0O6N_93bFQQCNcBGAsYHQ/w1600/%25D8%25A7%25D9%2581%25D8%25AE%25D9%2585%2B%25D9%2588%25D8%25A7%25D8%25AC%25D9%2585%25D9%2584%2B%25D8%25AE%25D9%2584%25D9%2581%25D9%258A%25D8%25A7%25D8%25AA%2B%25D9%2585%25D9%258A%25D8%25B3%25D9%258A%2B4K%2B%25D9%2588%25D9%2587%25D9%2588%2B%25D9%258A%25D9%2582%25D8%25A8%25D9%2584%2B%25D9%2583%25D8%25A3%25D8%25B3%2B%25D8%25A7%25D9%2584%25D8%25B9%25D8%25A7%25D9%2584%25D9%2585.jpg" alt="صورة 1">
+            <img src="https://f.top4top.io/p_2543whnkt1.jpg" alt="صورة 2">
+            <img src="https://th.bing.com/th/id/OIP.ynSirWIMlN-ojCyzcmYWOAHaI9?rs=1&pid=ImgDetMain" alt="صورة 3">
+            <img src="https://ddreams.cc/wp-content/uploads/2018/07/1695-13.jpg" alt="صورة 4">
+        </div>
+    </body>
+    </html>
+    
+
+
+
+
+
+
+
+
+    <div style="text-align: center;">
+        <a href="https://www.instagram.com/اسم_حسابك" target="_blank" style="margin: 10px; color: #E4405F; font-size: 24px;">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/اسم_حسابك" target="_blank" style="margin: 10px; color: #1877F2; font-size: 24px;">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.snapchat.com/add/اسم_حسابك" target="_blank" style="margin: 10px; color: #FFFC00; font-size: 24px;">
+            <i class="fab fa-snapchat"></i>
+        </a>
+        <a href="https://www.tiktok.com/@اسم_حسابك" target="_blank" style="margin: 10px; color: #000000; font-size: 24px;">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html> 
+
+
+
 
