@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علاء الشلول</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">الخدمات</a></li>
+                <li><a href="#">التواصل</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>هاي يا خوان اني علاء</h1>
+        <p>نحن نقدم أفضل الخدمات.</p>
+        <a href="https://www.instagram.com/3laa_shlool" target="_blank">
+            <button>تواصل معنا</button>
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025موقعي الإلكتروني. جميع الحقوق محفوظة لعلاء الشلول.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- ربط ملف JavaScript -->
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محرر البحث</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .search-container {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .results {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1> البحث</h1>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="أدخل كلمة للبحث">
+        <button onclick="performSearch()">بحث</button>
+    </div>
+    <div class="results" id="results"></div>
+
+    <script>
+        const data = [
+            "مرحبا بك في موقعنا",
+            "تعلم البرمجة بطريقة سهلة",
+            "دورة تطوير الويب الشاملة",
+            "ما هو JavaScript؟",
+            "تصميم واجهات المستخدم",
+            "تعلم HTML وCSS للمبتدئين",
+            "أساسيات قواعد البيانات",
+        ];
+
+        function performSearch() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = ""; // مسح النتائج السابقة
+
+            if (query.trim() === "") {
+                resultsContainer.innerHTML = "<p>الرجاء إدخال كلمة للبحث.</p>";
+                return;
+            }
+
+            const results = data.filter(item => item.toLowerCase().includes(query));
+
+            if (results.length > 0) {
+                resultsContainer.innerHTML = "<h3>نتائج البحث:</h3>";
+                results.forEach(result => {
+                    resultsContainer.innerHTML += `<p>${result}</p>`;
+                });
+            } else {
+                resultsContainer.innerHTML = "<p>لا توجد نتائج مطابقة.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
+

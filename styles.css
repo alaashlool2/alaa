@@ -1,0 +1,68 @@
+/* إعداد الخطوط والأساسيات */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl; /* لجعل النصوص من اليمين لليسار */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* تنسيق الهيدر */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* تصميم قسم Hero */
+#hero {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hero h1 {
+    font-size: 36px;
+}
+
+#hero button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* تصميم الفوتر */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
